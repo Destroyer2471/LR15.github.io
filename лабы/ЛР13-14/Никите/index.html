@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-3</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h6>Volkov Nikita Olegovich</h6>
+    <img src="assets/images/img.png">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Получаем информацию о статусе загрузки документа
+            var documentStatus = document.readyState;
+
+            // Задержка вывода информации на 5 секунд
+            setTimeout(function () {
+                console.log("Статус загрузки документа: " + documentStatus);
+
+                // Создаем новый элемент (Место рождения)
+                var birthplaceNode = document.createElement("p");
+                birthplaceNode.textContent = "Место рождения: Гродно";
+
+                // Вставляем новый элемент после существующего элемента (изображение)
+                var imgElement = document.querySelector("img");
+                imgElement.parentNode.insertBefore(birthplaceNode, imgElement.nextSibling);
+            }, 5000);
+        });
+    </script>
+
+    <button onclick="changeStyles()">Изменить стиль</button>
+
+    <script>
+        function changeStyles() {
+            // Изменяем стили непосредственно через JavaScript
+            document.body.style.backgroundColor = 'lightblue';
+            document.body.style.fontFamily = 'Verdana, Geneva, sans-serif';
+            document.body.style.fontSize = '14px';
+            document.body.style.color = 'green';
+
+            var img = document.getElementById('myImg');
+            img.style.border = '10px solid red';
+            img.style.padding = '5px'; // добавляем отступы для рамки
+            img.style.display = 'inline-block'; // чтобы рамка не разделяла строку
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Функция для получения и отображения URL
+            function displayURL() {
+                var currentURL = window.location.href;
+                alert("Полный URL-адрес документа: " + currentURL);
+            }
+
+            // Отображаем информацию через 5 секунд после загрузки страницы
+            setTimeout(displayURL, 5000);
+        });
+    </script>
+</body>
+</html>
+
