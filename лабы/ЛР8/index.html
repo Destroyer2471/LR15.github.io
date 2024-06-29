@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <h2 class="title">Форма обратной связи</h2>
+            <div class="block">
+                <label class="text" for="first-name">Ваше имя <span class="redan">*</span></label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="block">
+                <label class="text" for="last-name">Ваша фамилия <span class="redan">*</span></label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="block">
+                <label class="text" for="city">Город</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="block">
+                <label class="text" for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="block">
+                <label class="text" for="mobile-phone">Мобильный телефон</label>
+                <input type="tel" id="mobile-phone" name="mobile-phone" placeholder="+7">
+            </div>
+            <div class="block">
+                <label class="text" for="home-phone">Домашний телефон</label>
+                <input type="tel" id="home-phone" name="home-phone" placeholder="+7">
+            </div>
+            <div class="block">
+                <label class="text" for="category">Категория обращения</label>
+                <select id="category" name="category">
+                    <option value="работа сайта">работа сайта</option>
+                </select>
+            </div>
+            <div class="block">
+                <label class="text" for="store-address">Адрес магазина, где была осуществлена покупка</label>
+                <input type="text" id="store-address" name="store-address">
+            </div>
+            <div class="block">
+                <label class="text" for="order-number">Номер веб-заявки</label>
+                <input type="text" id="order-number" name="order-number">
+            </div>
+            <div class="block">
+                <label class="text" for="message">Текст сообщения <span class="redan">*</span></label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="block">
+                <label class="text" for="file">Прикрепить файлы (до 1 МБ)</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div class="block">
+                <div class="red">*_Поля, обязательные для заполнения</div>
+            </div>
+            <div class="block">
+                <div class="buttons">
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Сбросить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="inner">
+        <div class="card">
+            <div class="card_book"><img src="assets\img\book.png"></div>
+            <div class="card_text"><b><span1>Зоопарк в твоей голове. 25<br />психологических синдромов, которы...</span1></b><br /><span2>Михаил Лабковский, Ольга Примаче...</span2><br /><b>25,11 руб.</b><img src="assets\img\mark.jpeg"></</div>
+        </div>
+        <div class="footer">
+            <div class="footer_skidka"><b>-10%</b></div>
+            <div class="footer_empty"></div>
+            <div class="footer_brilliant"><img src="assets\img\brilliant.png">0,25</div>
+        </div>
+    </div>
+</body>
+</html>
