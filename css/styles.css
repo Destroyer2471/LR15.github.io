@@ -1,0 +1,11 @@
+body {
+    background-image: url(epic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+a {
+    color: lime;
+}
