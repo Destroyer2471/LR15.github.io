@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <script src="script.js"></script>
+    <script>
+        function showYear() {
+            var currentYear = new Date().getFullYear();
+            alert("this year: " + currentYear);
+        }
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    <button onclick="showYear()">Show year</button>
+    <script>
+        for (var i = 0; i < 9; i++) {
+            document.write("Volkov Nikita<br>");
+        }
+    </script>
+    <script>
+        var numbers = [8, 3, 12, 5, 7];
+        var originalArrayText = document.createTextNode("First massive: " + numbers);
+        var min = Math.min(...numbers);
+        var minIndex = numbers.indexOf(min);
+        var temp = numbers[numbers.length - 1];
+        numbers[numbers.length - 1] = min;
+        numbers[minIndex] = temp;
+
+        // Создаем новый элемент для вывода исходного и измененного массивов
+        var outputDiv = document.getElementById('output');
+
+        // Выводим исходный массив
+        outputDiv.appendChild(originalArrayText);
+        outputDiv.appendChild(document.createElement("br")); // Добавляем перенос строки
+
+        // Выводим измененный массив
+        var modifiedArrayText = document.createTextNode("Changed massive: " + numbers);
+        outputDiv.appendChild(modifiedArrayText);
+    </script>
+    <p>Original string s1 : I love Belarus!</p>
+    <p>Original string s2 : I learning in the Polytechnical college!</p>
+    <p id="s1Length"></p>
+    <p id="fourthChar"></p>
+    <p id="fourthCharASCII"></p>
+    <p id="replacedString"></p>
+    <script>
+        var s1 = "I love Belarus!";
+        var s2 = "I learning in the Polytechnical college!";
+
+        // Определить длину строки s1
+        var s1Length = s1.length;
+        document.getElementById("s1Length").innerHTML = "Length string s1: " + s1Length;
+
+        // Выделить 4-ый символ в строке s1 и определить ASCII-код этого символа
+        var fourthChar = s1.charAt(3); // Индексация начинается с 0, поэтому 4-ый символ имеет индекс 3
+        var fourthCharASCII = fourthChar.charCodeAt(0);
+        document.getElementById("fourthChar").innerHTML = "4-th symbol in string s1: " + fourthChar;
+        document.getElementById("fourthCharASCII").innerHTML = "ASCII-code 4-th symbol: " + fourthCharASCII;
+
+        // Заменить в строке s2 все встречающиеся буквы "о" на "а"
+        var replacedString = s2.replace(/o/g, "a");
+        document.getElementById("replacedString").innerHTML = "Changed string s2: " + replacedString;
+    </script>
+</body>
+</html >
