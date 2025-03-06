@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регулярки</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Регулярки JS</h1>
+
+        <div class="container">
+            <h2>Email</h2>
+            <input type="text" id="emailInput" placeholder="Email пожалуйста">
+            <button onclick="checkEmail()">Проверить</button>
+            <p id="emailResult"></p>
+
+            <h2>Шерлок Словс</h2>
+            <input type="text" id="searchTextInput" placeholder="Текст для поиска">
+            <input type="text" id="searchInput" placeholder="Слово для поиска">
+            <button onclick="searchWord()">Поиск</button>
+            <p id="searchResult"></p>
+
+            <h2>Поменять слово</h2>
+            <input type="text" id="replaceInput" placeholder="Текст пжшка">
+            <input type="text" id="wordToReplace" placeholder="Слово для измены">
+            <input type="text" id="replacementWord" placeholder="Слово замены">
+            <button onclick="replaceWord()">Заманить</button>
+            <p id="replaceResult"></p>
+
+            <h2>Разделение строки</h2>
+            <input type="text" id="splitInput" placeholder="Введите строку для раздела ВКЛ (через запятую)">
+            <button onclick="splitString()">Разделить</button>
+            <p id="splitResult"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

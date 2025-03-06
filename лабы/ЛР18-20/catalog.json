@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Rocket Hat",
+      "description": "Fly",
+      "price": 2000,
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "name": "Varn Boots",
+      "description": "Boots of jump",
+      "price": 1500,
+      "quantity": 100
+    },
+    {
+      "id": 3,
+      "name": "100 credits",
+      "description": "Donations",
+      "price": 1200,
+      "quantity": 75
+    },
+    {
+      "id": 4,
+      "name": "Sneakers",
+      "description": "sneakers",
+      "price": 800,
+      "quantity": 200
+    },
+    {
+      "id": 5,
+      "name": "Xi-Vision",
+      "description": "Googles",
+      "price": 1800,
+      "quantity": 60
+    },
+    {
+      "id": 6,
+      "name": "Bruh Mask",
+      "description": "Masks",
+      "price": 2500,
+      "quantity": 40
+    },
+    {
+      "id": 7,
+      "name": "Dingo",
+      "description": "Other",
+      "price": 1000,
+      "quantity": 90
+    },
+    {
+      "id": 8,
+      "name": "Premium",
+      "description": "Addictions",
+      "price": 900,
+      "quantity": 120
+    },
+    {
+      "id": 9,
+      "name": "Classes",
+      "description": "Normal",
+      "price": 1300,
+      "quantity": 85
+    },
+    {
+      "id": 10,
+      "name": "Profiles",
+      "description": "Quantity",
+      "price": 2200,
+      "quantity": 30
+    }
+  ]
